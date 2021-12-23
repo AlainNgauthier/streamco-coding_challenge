@@ -5,27 +5,26 @@
     },
     "settings": {
         "react": {
-        "version": "detect"
+            "version": "detect"
         }
     },
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:prettier/recommended"
+        "plugin:react-hooks/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": 12,
+        "ecmaVersion": 13,
         "sourceType": "module"
     },
     "plugins": [
-        "react", "react-hooks"
+        "react"
     ],
     "rules": {
-        "react-hooks/rules-of-hooks": "error",
-        "react-hooks/exhaustive-deps": "warn",
+        "react/prop-types": "off",
         "react/react-in-jsx-scope": "off"
     }
 }

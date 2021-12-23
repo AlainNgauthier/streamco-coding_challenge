@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import TemplateMovies from 'templates/movies';
 
 function Movies(props) {
