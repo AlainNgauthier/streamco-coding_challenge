@@ -1,0 +1,25 @@
+.main {
+    display: flex;
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &__link {
+            font-weight: 300;
+        }
+
+        &__card {
+            height: 300px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #17202A;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 20px;
+        }
+    }
+}

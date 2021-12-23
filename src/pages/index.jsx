@@ -1,11 +1,9 @@
-import Layout from 'components/_layout';
+import HomeCaroussel from 'components/Home/Caroussel';
 
 export default function Page() {
   return (
     <>
-      <Layout title="Gauthier Streaming">
-        <div>HOME</div>
-      </Layout>
+      <HomeCaroussel />
     </>
   );
 }
