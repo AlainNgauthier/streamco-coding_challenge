@@ -2,7 +2,6 @@
 import Header from 'components/Header/DefaultHeader';
 
 const Layout = ({ ...props }) => {
-  //   console.log(props);
   return (
     <>
       <Header />

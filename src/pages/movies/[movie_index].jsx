@@ -3,7 +3,6 @@ import TemplateMovies from 'templates/movies';
 
 function Movies(props) {
   const { moviesToRender, num_pages, current_page } = props;
-  //   console.log(current_page);
   return (
     <>
       <TemplateMovies
@@ -31,8 +30,6 @@ export const getStaticPaths = async () => {
     (item) => item.programType === 'movie'
   );
 
-  console.log(movies);
-
   const num_pages = Math.ceil(movies.length / SERIES_PER_PAGE);
 
   let paths = [];
@@ -43,8 +40,6 @@ export const getStaticPaths = async () => {
       }
     });
   }
-
-  //   console.log(paths);
 
   return {
     paths,
@@ -76,7 +71,6 @@ export const getStaticProps = async ({ params }) => {
     pageIndex * SERIES_PER_PAGE,
     (pageIndex + 1) * SERIES_PER_PAGE
   );
-  console.log(moviesRendered.length);
 
   return {
     props: {

@@ -1,8 +1,6 @@
 /* eslint-disable react/prop-types */
 // import styles from './series.module.scss';
 export default function TemplateMovies({ movies, num_pages, current_page }) {
-  //   console.log(current_page);
-
   //   const {
   //     main,
   //     main__wrap,

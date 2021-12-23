@@ -3,7 +3,6 @@ import TemplateSeries from 'templates/series';
 
 function Series(props) {
   const { seriesToRender, num_pages, current_page } = props;
-  //   console.log(current_page);
   return (
     <>
       <TemplateSeries
@@ -42,8 +41,6 @@ export const getStaticPaths = async () => {
     });
   }
 
-  //   console.log(paths);
-
   return {
     paths,
     fallback: false
@@ -74,7 +71,6 @@ export const getStaticProps = async ({ params }) => {
     pageIndex * SERIES_PER_PAGE,
     (pageIndex + 1) * SERIES_PER_PAGE
   );
-  console.log(seriesRendered.length);
 
   return {
     props: {

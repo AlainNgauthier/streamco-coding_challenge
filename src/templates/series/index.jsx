@@ -3,8 +3,6 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import styles from './series.module.scss';
 export default function TemplateSeries({ series, num_pages, current_page }) {
-  console.log(current_page);
-  console.log('total pages', num_pages);
   const router = useRouter();
 
   //Finding if the actual page is either the first or the last

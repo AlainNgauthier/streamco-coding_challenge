@@ -20,10 +20,6 @@ export default function DefaultHeader() {
 
   const { width } = useWindowSize();
 
-  //   useEffect(() => {
-  //     console.log(width);
-  //   });
-
   if (width < 600) {
     return <MobileHeader />;
   }
